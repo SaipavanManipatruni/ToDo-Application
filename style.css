@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2dfd7;
+}
+
+.todo-container {
+  background-color: #fef9ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: calc(100% - 22px);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f2dfd7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.remove-all-btn {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.remove-all-btn:hover {
+  background-color: #c82333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; /* Stack task and date-time vertically */
+  background-color: #f9f9f9; /* Background color for each task */
+  border-radius: 5px; /* Slight rounding of corners */
+  margin-bottom: 10px; /* Space between tasks */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+li:hover {
+  background-color: #e9ecef; /* Change background on hover */
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.date-time {
+  font-size: 0.7rem; /* Smaller font size */
+  color: #888;
+  margin-top: 5px;
+  text-align: center; /* Center align the date-time */
+}
